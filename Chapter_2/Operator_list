@@ -1,0 +1,60 @@
+x.y
+The member y of object x
+x[y]
+The element in object x indexed by y
+x++
+Increments x , returning the original value of x
+x--
+Decrements x , returning the original value of x
+
+
+++x
+Increments x , returning the incremented value
+--x
+Decrements x , returning the decremented value
+!x
+Logical negation. If x is true then !x is false .
+
+x * y
+Product of x and y
+x / y
+Quotient of x and y . If both operands are integers,
+the implementation chooses whether to round toward zero or - 8
+x % y
+Remainder of x divided by y , equivalent to x - ((x / y) * y)
+
+x + y
+Sum of x and yx - y
+Result of subtracting y from x
+
+x >> y
+For integral x and y, x shifted right by y bits; y must be non-negative.
+If x is an istream , reads from x into y
+x << y
+For integral x and y, x shifted left by y bits; y must be non-negative.
+If x is an ostream , writes y onto x .
+
+x relop y
+Relational operators yield a bool indicating the truth of the relation.
+The operators ( <, >, <= , and >= ) have their obvious meanings.
+
+x == y
+Yields a bool indicating whether x equals y
+x != y
+Yields a bool indicating whether x is not equal to y
+
+x && y
+Yields a bool indicating whether both x and y are true .
+Evaluates y only if x is true .
+x || y
+Yields a bool indicating whether either x or y is true .
+Evaluates y only if x is false .
+x = y
+Assign the value of y to x , yielding x as its result.
+x op= y
+Compound assignment operators; equivalent to x = x op y ,
+where op is an arithmetic or shift operator.
+
+x ? y1 : y2
+Yields y1 if x is true ; y2 otherwise.
+Evaluates only one of y1 and y2 .

@@ -1,0 +1,42 @@
+Local variables are default-initialized if they are defined without an explicit initializer.
+Default-initialization of a built-in type means that the value is undefined. Undefined values
+may be used only as the left-hand side of an assignment.
+Type definitions:
+typedef type name ; Defines name as a synonym for type.
+The vector type, defined in <vector> , is a library type that is a container that holds a
+sequence of values of a specified type, vectors grow dynamically. Some important
+operations are:
+vector<T>::size_type
+A type guaranteed to be able to hold the number of elements in the
+largest possible vector .
+v.begin()
+Returns a value that denotes the first element in v .
+v.end()
+Returns a value that denotes (one past) the last element in v .
+vector<T> v;
+Creates an empty vector that can hold elements of type T .
+v.push_back(e)
+Grows the vector by one element initialized to e .
+v[i]
+Returns the value stored in position i .
+v.size()
+Returns the number of elements in v .
+Other library facilities
+sort(b, e)
+Rearranges the elements defined by the range [b, e) into nondecreasing order. Defined
+in <algorithm> .
+max(el, e2)
+Returns the larger of the expressions e1 and e2 ; e1 and e2 must have exactly the sametype. Defined in <algorithm> .
+while (cin >> x)
+Reads a value of an appropriate type into x and tests the state of the stream. If the stream
+is in an error state, the test fails; otherwise, the test succeeds, and the body of the while
+is executed.
+s.precision(n)
+Sets the precision of stream s to n for future output (or leaves it unchanged if n is
+omitted). Returns the previous precision.
+setprecision(n)
+Returns a value that, when written on an output stream s , has the effect of calling
+s.precision(n) . Defined in <iomanip> .
+streamsize
+The type of the value expected by setprecision and returned by precision . Defined
+in <ios> .
